@@ -1,1 +1,21 @@
-parse less to css
+此工具依赖node和less
+node：https://github.com/joyent/node
+less:https://github.com/cloudhead/less.js
+
+使用方法：
+1.打开less2css修改lessc路径
+2.如果你有一个style.less文件运行less2css会自动在当前目录下编译出style.css
+
+命令: 
+单文件实时监听编译：node less2css style
+多文件实时监听编译：node less2css style [style2,style3,...]
+
+说明：
+由于暂时不支持gbk编码编译，所以less中的注释最好使用//注释，这样编译出来的css文件将屏蔽//注释不做编译
+不会出现乱码状况
+
+TODO：
+支持gbk编码
+支持压缩编译
+
+
